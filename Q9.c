@@ -30,10 +30,12 @@ void main ()
 
 int PA(int vet[],int quantidade)
 {
+    //calculo da razão em diversos momentos, gasta muita memoria desnecessariamente
     int razao;
     razao= vet[1]-vet[0];
    // printf("%d\n",razao);
-      if(quantidade>1)
+ //poderia ser quantidade>3 
+    if(quantidade>1)
   {
     if(razao==vet[quantidade-1]-vet[quantidade-2])
     {
@@ -47,6 +49,7 @@ int PA(int vet[],int quantidade)
     }
     
   }
+    //return 1;
 }
 
 
