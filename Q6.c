@@ -17,7 +17,7 @@ void main ()
     }
     
      resposta=palindromo(0,vet,quantidade);
-    if(resposta==1)
+    if(resposta==0)
     {
     printf("Nao E um palindromo.");
     }
@@ -30,7 +30,8 @@ int palindromo (int i , int vet[], int quantidade)
 {
     int tamanho=quantidade-1;
 
-        if(i<=tamanho)
+    // O i poderia ser i<0
+        if(i<=tamanho) 
         {
             if(vet[i]==vet[tamanho])
             {
@@ -38,10 +39,10 @@ int palindromo (int i , int vet[], int quantidade)
             }
             else
             {
-                return 1;
+                return 0;
             }
         }
-                
+         //return 1;       
 
 
 }
