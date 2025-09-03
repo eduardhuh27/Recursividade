@@ -34,7 +34,7 @@ int PA(int vet[],int quantidade)
     int razao;
     razao= vet[1]-vet[0];
    // printf("%d\n",razao);
- //poderia ser quantidade>3 
+ //poderia ser quantidade>2
     if(quantidade>1)
   {
     if(razao==vet[quantidade-1]-vet[quantidade-2])
